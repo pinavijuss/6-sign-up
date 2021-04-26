@@ -1,0 +1,63 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: ;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+   
+
+}
+
+body{
+    background-color: #00a4be;
+}
+
+.container { 
+   display: inline-block;
+   width: 800px;
+   margin-left: calc ((100% - 800px) / 2);
+   background-color: pink;
+}
+
+.left-column { 
+    display: inline-block;
+    width: 40%;
+    float: left;
+    background-color: yellow;
+
+
+}
+.right-column {
+    display: inline-block;
+    width: calc(60% - 80px);
+
+    padding: 60px;
+
+    float: right;
+    background-color: orange;
+
+}
+
+.main-title {
+
+
+}
+
+.bottom-links {
+
+}
+
+.bottom-links > a { 
+
+}
+.bottom-links > span { 
+
+}
+
+.close {
+
+}
+.form {
+
+}
