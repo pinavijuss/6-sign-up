@@ -38,3 +38,11 @@ Norint iskirpti fona:
 2. ctrl + i
 3. crtl + shift + x
 4. ctrl + s
+
+# 1.Vaikui duodam 'position: absolute;'
+  2. Artimiausiam logiskam tevui suteikiame:
+  a) 'position: relative', jeigu tas elementas neturi kitokiu 'position' savybiu;
+  b) paliekame tokia 'position' savybe, kokia tas elementas turi, jei nurodytas;
+
+  Isvada:
+  absoliuciai pozicionuojams elementas bus pastatytas artimiausio ne 'position: static' elemento atzvilgiu.

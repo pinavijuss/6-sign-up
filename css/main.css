@@ -2,7 +2,7 @@ body,
 body * {
     margin: 0;
     padding: 0;
-    vertical-align: ;
+    vertical-align: top;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
    
@@ -13,51 +13,176 @@ body{
     background-color: #00a4be;
 }
 
+.background {
+
+    background-image: url(../fonas.jpeg);
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+filter: blur(20px);
+}
+
 .container { 
    display: inline-block;
    width: 800px;
-   margin-left: calc ((100% - 800px) / 2);
-   background-color: pink;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+  transform: translate(-50%, -50%);
+
+   
 }
 
 .left-column { 
-    display: inline-block;
+    
     width: 40%;
     float: left;
-    background-color: yellow;
+    padding: 40px;
+    background-color:#4c46a5;
+    color: #fff;
+    background-image: url(../fonas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
 
 
 }
 .right-column {
-    display: inline-block;
-    width: calc(60% - 80px);
+
+    width: 60%;
 
     padding: 60px;
 
     float: right;
-    background-color: orange;
-
+    background-color: #fff;
+    position: relative;
 }
 
 .main-title {
 
 
 }
-
 .bottom-links {
 
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
 }
 
-.bottom-links > a { 
+.bottom-links > a{
+color: #fff;
 
 }
+
+
+
+
 .bottom-links > span { 
-
+display: inline-block;
+margin-left: 15x;
+color: red;
 }
 
 .close {
+display: inline-block;
+width: 60px;
+height:60px;
+text-align: center;
+font-size: 30px;
+line-height: 54px;
+background-color: red;
+
+position: absolute;
+top: 0;
+right: 0;
+
 
 }
+
 .form {
+    display: inline-block;
+    width: 100%;
+}
+
+.form-row{
+    display: inline-block;
+    width: 100%;
+}
+.form-row + .form-row {
+    margin-top: 40px;
+}
+
+label{ 
+    display: inline-block;
+    width: 100%;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+
+}
+
+input:focus {
+
+    outline-color: yellowgreen;
+
+}
+input{
+    display: inline-block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.8em;
+  border: none;
+  border-bottom: 1px solid #999;
+  
+
+}
+
+::placeholder {
+    color:orange;
+    font-style: italic;
+}
+button:hover {
+
+    background-color: indigo;
+    cursor: pointer;
+        }
+
+button {
+    float: left;
+    padding: 10px 40px;
+    background-color: #015cda;
+    border: 1px solid #0045a7;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 21px;
+}
+
+
+
+
+.form-row > span {
+
+    float: left;  
+    padding: 11px;
+    line-height: 20px;
+}
+
+.form-row > a {
+float: left;  
+padding: 11px;
+text-decoration: none;
+line-height: 20px;
+}
+
+.hidden {
+display: none;
 
 }
